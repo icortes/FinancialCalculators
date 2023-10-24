@@ -9,11 +9,12 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Mortgage Calculator</title>
   </head>
   <body class="container-md h-100" data-bs-theme="dark">
+    <h1 class="text-center mt-3">Mortgage Calculator</h1>
     <main class="d-flex justify-content-center align-items-center">
-      <div class="card mt-5">
+      <div class="card mt-3">
         <div class="card-body">
           <div class="input-group mb-2">
             <span class="input-group-text">Loan Amount($):</span>
@@ -28,7 +29,11 @@
             <input class="form-control" type="number" id="loanLength" />
           </div>
 
-          <button class="btn btn-outline-success mb-2 w-100" id="calculateBtn">
+          <button
+            class="btn btn-outline-success mb-2 w-100"
+            id="calculateBtn"
+            onclick="calculateMortgage()"
+          >
             Calculate
           </button>
 
@@ -42,7 +47,7 @@
               readonly
             />
           </div>
-          <div class="input-group">
+          <div class="input-group mb-2">
             <span class="input-group-text">Total Interest Paid($):</span>
             <input
               class="form-control"
@@ -52,6 +57,8 @@
               readonly
             />
           </div>
+          <p class="card-text text-center" id="resultText">
+          </p>
         </div>
       </div>
     </main>
@@ -61,6 +68,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="scripts/mortgage.js"></script>
+    <script src="/scripts/mortgage.js"></script>
   </body>
 </html>
