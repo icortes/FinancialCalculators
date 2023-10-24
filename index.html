@@ -11,17 +11,27 @@
     />
     <title>Document</title>
   </head>
-  <body class="container-md h-100" data-bs-theme="dark">
-    <h1 class="text-center">Financial Calculators</h1>
-    <main class="d-flex justify-content-center align-items-center">
-      <div class="card mt-5">
+  <body class="container-md" data-bs-theme="dark">
+    <h1 class="text-center mt-3">Financial Calculators</h1>
+    <main class="d-flex justify-content-center">
+      <div class="card mt-3">
         <div class="card-body">
-          <button
-            class="btn btn-outline-secondary"
-            onclick="window.location.href='/calculator/mortgage.html'"
-          >
-            Mortgage Calculator
-          </button>
+          <div class="input-group mb-2">
+            <button
+              class="btn btn-outline-secondary"
+              onclick="window.location.href='/calculator/mortgage.html'"
+            >
+              Mortgage Calculator
+            </button>
+          </div>
+          <div class="input-group mb-2">
+            <button
+              class="btn btn-outline-secondary w-100"
+              onclick="window.location.href='/calculator/futurevalue.html'"
+            >
+              Future Value
+            </button>
+          </div>
         </div>
       </div>
     </main>
@@ -30,7 +40,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
-    <script src="scripts/index.js"></script>
   </body>
 </html>
